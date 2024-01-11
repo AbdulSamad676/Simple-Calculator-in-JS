@@ -1,9 +1,6 @@
 let displayScreen = document.querySelector('.display');
 console.log(displayScreen);
 
-// let result = eval('24*6');
-// console.log(result);
-
 let btns = document.querySelectorAll('.Btn');
 
 console.log(btns);
@@ -24,8 +21,12 @@ btns.forEach(btn => {
 });
 
 function calculateResult() {
-	let displayData = eval(displayScreen.innerHTML);
-	displayScreen.innerHTML = displayData;
+	try {
+		let displayData = eval(displayScreen.innerHTML);
+		displayScreen.innerHTML = displayData;
+	} catch (error) {
+		displayScreen.innerHTML = 'Error';
+	}
 }
 function clearScreen() {
 	displayScreen.innerHTML = '';
