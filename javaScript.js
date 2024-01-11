@@ -26,6 +26,9 @@ function calculateResult() {
 		displayScreen.innerHTML = displayData;
 	} catch (error) {
 		displayScreen.innerHTML = 'Error';
+		setTimeout(function () {
+			displayScreen.innerHTML = '';
+		}, 3000);
 	}
 }
 function clearScreen() {
