@@ -13,6 +13,9 @@ btns.forEach(btn => {
 		if (e.target.innerHTML === 'x') {
 			e.target.innerHTML = '*';
 			displayScreen.innerHTML += e.target.innerHTML;
+		} else if (e.target.innerHTML === '÷') {
+			e.target.innerHTML = '/';
+			displayScreen.innerHTML += e.target.innerHTML;
 		} else {
 			displayScreen.innerHTML += e.target.innerHTML;
 			// displayScreen.innerHTML = displayScreen.value;
