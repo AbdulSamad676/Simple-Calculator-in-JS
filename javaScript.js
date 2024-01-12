@@ -6,7 +6,7 @@ let btns = document.querySelectorAll('.Btn');
 console.log(btns);
 btns.forEach(btn => {
 	btn.addEventListener('click', function (e) {
-		console.log(e.target.innerHTML);
+		// console.log(e.target.innerHTML);
 		if (e.target.innerHTML === 'x') {
 			// e.target.innerHTML = '*';
 			displayScreen.innerHTML += '*';
